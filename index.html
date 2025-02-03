@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Number Trick</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <script>
+        var entry;
+        var number;
+        //var total = 0;
+    
+        //get a number from the user
+      function getNumber() { 
+        //while(true){
+        entry = prompt("Enter any whole number!");
+        if (entry == null || entry == "") {
+          //no entry
+            alert("You have to enter a number to play the game!");
+            return getNumber();
+            //return true;
+          
+        } else if (entry.length<=0 || isNaN(entry)) {
+          //value is not a number
+          alert("Invalid Entry! Please enter a whole number!");
+          return getNumber();
+        } else {
+          //is a whole number
+          return parseInt(entry);
+        }
+      }
+      
+        getNumber();
+        
+                //not a number
+                //alert("Invalid Entry! Please enter a whole number!");
+                
+           
+                //valid entry
+       entry = parseInt(entry);
+        var number = entry;
+        var num1 = number + 9;
+        var num2 = num1 * 2;
+        var num3 = num2 - 4;
+        var num4 = num3 / 2;
+        result = num4 - number;
+        
+       // result = ((number + 9) * 2 - 4) / 2 - number;
+      
+      
+        
+    //total = total + score1;
+    alert("Your final number is " + result + "! ");
+        
+    </script>
+</head>
+<body>
+    <h1 id="title">The Number Trick</h1>
+    <div id="content">
+    <script>
+   // document.write("<h1>The Number Trick</h1>");
+   
+    /*document.write("9 is added to " + number +  " and gives us " + num1 + ".<br>" +
+        "Then we multiple  " + num1 + " by 2 and get " + num2 + ".<br><br>" +
+        "Next we subtract 4 from " + num2 + ", leaving us with " + num3 + ".<br>" +
+      "With that, we divide " + num3 + " by 2, which is " + num4 + ".<br><br>" +
+    "Finally, all thats left is to subtract the original number " + number + " from " + num4 + " and we get " + result + "!<br><br>");
+   */
+   //document.write("<h1>The Number Trick</h1>");
+   
+   document.write("<li> First 9 is added to "  + number +  " and gives us " + num1 + ".<br></li>"); 
+     document.write("<li> Then we multiple  " + num1 + " by 2 and get " + num2 + ".<br></li>"); 
+      document.write("<li> Next we subtract 4 from " + num2 + ", leaving us with " + num3 + ".<br></li>");
+     document.write("<li> With that, we divide " + num3 + " by 2, which is " + num4 + ".<br></li>");
+  document.write ("<li>Finally, all thats left is to subtract the original number " + number + " from " + num4 + " and we get " + result + "!<br><br></li>");
+   
+   </script>
+    </div>
+   <p id="outro"> Thanks for trying out The Number Trick!</p>
+   
+    
+</body>
+</html>
